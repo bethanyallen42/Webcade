@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mancala</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <header>Mancala</header>
+
+    <main>
+      <div id="enter_number" class="player_info">
+        <p>How many people are playing?</p>
+        <select name="choose_number_of_players" id="choose_number">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <input type="submit" value="next" id="next" />
+      </div>
+
+      <div id="enter_name" class="player_info">
+        <p>Please enter your name.</p>
+        <form action="">
+          <input type="submit" value="Let's Play" id="ready_to_play" />
+        </form>
+      </div>
+
+      <div id="vs" class="player_info"></div>
+      <div class="board_info_1">
+        <p id="player_one_mancala"></p>
+        <p id="player_one_side" class="side"></p>
+      </div>
+      <div class="board">
+        <div class="mancala" data-index="6" data-player="1"></div>
+        <div class="pit_wrapper">
+          <div class="pit player_one_box" data-index="5" data-player="1"></div>
+          <div class="pit player_one_box" data-index="4" data-player="1"></div>
+          <div class="pit player_one_box" data-index="3" data-player="1"></div>
+          <div class="pit player_one_box" data-index="2" data-player="1"></div>
+          <div class="pit player_one_box" data-index="1" data-player="1"></div>
+          <div class="pit player_one_box" data-index="0" data-player="1"></div>
+          <div class="pit player_two_box" data-index="7" data-player="2"></div>
+          <div class="pit player_two_box" data-index="8" data-player="2"></div>
+          <div class="pit player_two_box" data-index="9" data-player="2"></div>
+          <div class="pit player_two_box" data-index="10" data-player="2"></div>
+          <div class="pit player_two_box" data-index="11" data-player="2"></div>
+          <div class="pit player_two_box" data-index="12" data-player="2"></div>
+        </div>
+        <div class="mancala" data-index="13" data-player="2" id="box-13"></div>
+      </div>
+      <div class="board_info_2">
+        <p id="player_two_side" class="side"></p>
+        <p id="player_two_mancala"></p>
+      </div>
+      <div>
+        <a
+          href="https://www.thesprucecrafts.com/how-to-play-mancala-409424"
+          target="_blank"
+          ><button>How To Play</button></a
+        >
+        <button class="reset" id="reset">Reset The Game</button>
+      </div>
+    </main>
+
+    <div id="alert_wrapper" class="popup_wrapper">
+      <div id="alert" class="popup">
+        <p id="message"></p>
+        <button class="close" id="close_alert">Ok</button>
+      </div>
+    </div>
+
+    <div id="winner_window" class="popup_wrapper">
+      <div id="winner_inner_window" class="popup">
+        <p id="winner"></p>
+        <p>Would you like to play again?</p>
+        <div>
+          <button class="reset" id="new_game_reset">Yes!</button>
+          <button class="close" id="close_modal">No</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

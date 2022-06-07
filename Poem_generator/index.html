@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Would You Like Me To Write You a Poem</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="questionCard">
+      <h1 class="robotMessage" id="mainHeader">
+        Would you like me to write you a poem?
+      </h1>
+      <div class="contentImageWrapper">
+        <div class="content" id="mainContent">
+          <form id="submissionForm">
+            <textarea
+              name="wordCorpus"
+              id="submittedCorpus"
+              class="enterTextHere"
+              cols="30"
+              rows="10"
+              placeholder="Please enter text here to inspire me.  This can be a song, quote,  page from a book, or something you have written."
+            ></textarea>
+            <div class="linesSelectContainer">
+              <p>How many lines would you <br />like your poem to have?</p>
+              <select name="howManyLines" id="numOfLines" class="dropDownNum">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <input type="submit" id="submitBtn" />
+          </form>
+        </div>
+
+        <div class="image">
+          <img src="kindpng_1981548.png" alt="Cute Robot" class="robotImg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="poemCard">
+      <h1 class="robotMessage">Here is the poem I wrote for you!</h1>
+      <div class="contentImageWrapper">
+        <div class="content poemTextContent" id="mainContent">
+          <p class="poem" id="generatedPoem">Hi!</p>
+          <div class="playAgainWrapper">
+            <p>Would you like me to write you another poem?</p>
+            <button id="playAgain">Yes!</button>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="kindpng_1981548.png" alt="Cute Robot" class="robotImg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

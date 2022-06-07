@@ -1,0 +1,120 @@
+:root {
+  --card-color: #feffa5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--card-color);
+  padding: 20px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  height: 500px;
+}
+
+.robotImg {
+  height: 300px;
+  padding-left: 40px;
+}
+
+.contentImageWrapper {
+  display: flex;
+  align-items: center;
+  padding: 40px 40px 30px 40px;
+}
+
+.content {
+  width: 300px;
+}
+
+.enterTextHere,
+.enterTextHere:focus {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.18);
+}
+
+.enterTextHere:focus::placeholder {
+  color: transparent;
+}
+
+.linesSelectContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+select,
+select:focus {
+  border: 1.5px solid black;
+  border-radius: 4px;
+  outline: none;
+  height: 30px;
+}
+
+input {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.playAgainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 3px 5px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.poem {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+@media (max-width: 750px) {
+  .contentImageWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .robotImg {
+    height: 200px;
+  }
+
+  body {
+    align-items: flex-start;
+    background-color: var(--card-color);
+  }
+}
