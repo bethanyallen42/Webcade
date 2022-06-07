@@ -1,5 +1,5 @@
 const title = document.querySelector("h1");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".gameLink");
 const gameContainer = document.querySelector(".gameContainer");
 
 let colorArray = [

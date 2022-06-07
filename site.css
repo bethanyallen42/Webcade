@@ -30,21 +30,22 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: space-around;
-  width: 600px;
-  height: 100px;
+  width: 60vw;
+  height: 200px;
 }
 
-button {
+a {
+  color: black;
   font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  text-decoration: none;
   padding: 8px;
   width: 250px;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 35px;
   background-color: #f5f5f5;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* a {
-  color: black;
-  padding: 3px;
-  text-decoration: none;
-} */
