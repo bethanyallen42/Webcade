@@ -1,121 +1,120 @@
 :root {
-    --background: #b2b2b2;
-    --light-color: #ffffff;
-    --accent1: #17a2b8;
-    --accent2: #ffc107;
-    --accent3: #343a40;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: var(--light-color);
-  }
-  
+  --background: #b2b2b2;
+  --light-color: #ffffff;
+  --accent1: #17a2b8;
+  --accent2: #ffc107;
+  --accent3: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--light-color);
+}
+
+.game_container {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  text-align: center;
+}
+
+p {
+  margin: 18px;
+  font-size: 1.1em;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  border: none;
+  text-align: center;
+}
+
+.big_circle {
+  color: var(--accent3);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 15px 0px;
+  transform: translateX(30px);
+}
+
+.small_circle {
+  background-color: var(--accent1);
+  border: 0.75px solid var(--accent1);
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  transform: translate(-20px, 50px);
+  transition: background-color 300ms;
+}
+
+.shadow {
+  box-shadow: 0px 12px 17px -7px rgba(0, 0, 0, 0.63);
+}
+
+ul {
+  display: flex;
+  padding: 15px;
+}
+
+li {
+  list-style-type: none;
+  padding: 4px 15px;
+  border-radius: 5px;
+  margin: 15px;
+  border: 2px solid var(--light-color);
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
+  font-weight: 900;
+  transition: background-color 300ms;
+}
+
+button:hover,
+.small_circle:hover {
+  background-color: #fff;
+  color: var(--accent3);
+}
+
+.grey_btn {
+  background-color: var(--accent3);
+  border: 0.75px solid var(--accent3);
+  margin-right: 10px;
+}
+
+.yellow_btn {
+  background-color: var(--accent2);
+  border: 0.75px solid var(--accent2);
+  color: var(--accent3);
+}
+
+@media (max-width: 575px) {
   .game_container {
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
+    width: 100%;
   }
-  
-  h1 {
-    font-size: 2.5em;
-    letter-spacing: 0.1em;
-    font-weight: 900;
-    text-align: center;
-  }
-  
-  p {
-    margin: 18px;
-    font-size: 1.1em;
-    letter-spacing: 0.08em;
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  input {
-    border: none;
-    text-align: center;
-  }
-  
-  .big_circle {
-    color: var(--accent3);
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 15px 0px;
-    transform: translateX(30px);
-  }
-  
-  .small_circle {
-    background-color: var(--accent1);
-    border: 0.75px solid var(--accent1);
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    transform: translate(-20px, 50px);
-    transition: background-color 300ms;
-  }
-  
-  .shadow {
-    box-shadow: 0px 12px 17px -7px rgba(0, 0, 0, 0.63);
-  }
-  
-  ul {
-    display: flex;
-    padding: 15px;
-  }
-  
-  li {
-    list-style-type: none;
-    padding: 4px 15px;
-    border-radius: 5px;
-    margin: 15px;
-    border: 2px solid var(--light-color);
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
-  }
-  
-  button {
-    border-radius: 5px;
-    padding: 8px 10px;
-    font-size: 0.9em;
-    letter-spacing: 0.08em;
-    font-weight: 900;
-    transition: background-color 300ms;
-  }
-  
-  button:hover,
-  .small_circle:hover {
-    background-color: #fff;
-    color: var(--accent3);
-  }
-  
-  .grey_btn {
-    background-color: var(--accent3);
-    border: 0.75px solid var(--accent3);
-    margin-right: 10px;
-  }
-  
-  .yellow_btn {
-    background-color: var(--accent2);
-    border: 0.75px solid var(--accent2);
-    color: var(--accent3);
-  }
-  
-  @media (max-width: 575px) {
-    .game_container {
-      width: 100%;
-    }
-  }
-  
+}
