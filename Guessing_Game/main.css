@@ -14,6 +14,16 @@
   color: var(--light-color);
 }
 
+.back-to-home {
+  color: black;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
 .game_container {
   background-color: var(--background);
   display: flex;
