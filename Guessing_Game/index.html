@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="game_container">
+      <h1>THE GUESSING GAME</h1>
+      <p>Guess a number between 1-100</p>
+
+      <form action="">
+        <input
+          type="text"
+          maxlength="3"
+          id="players_guess"
+          placeholder="TYPE GUESS HERE"
+          class="big_circle shadow"
+        />
+        <input
+          type="submit"
+          id="submit_btn"
+          value="Go!"
+          class="small_circle shadow"
+        />
+      </form>
+
+      <ul class="past_guess_container">
+        <li class="past_guess shadow">-</li>
+        <li class="past_guess shadow">-</li>
+        <li class="past_guess shadow">-</li>
+        <li class="past_guess shadow">-</li>
+        <li class="past_guess shadow">-</li>
+      </ul>
+
+      <div class="btn_container">
+        <button class="grey_btn shadow" id="play_again_btn">
+          RESET THE GAME
+        </button>
+        <button class="yellow_btn shadow" id="hint_btn">NEED A HINT?</button>
+      </div>
+    </div>
+
+    <script src="js/guessing-game.js"></script>
+  </body>
+</html>
